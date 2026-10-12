@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gifted Flexible Solutions | .NET & React Specialist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#0A2540',
+                        teal: '#00A896',
+                        gold: '#F4B400',
+                        light: '#F5F7FA',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-text { background: linear-gradient(to right, #00A896, #F4B400); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); }
+    </style>
+</head>
+<body class="bg-light text-navy font-sans antialiased">
+
+    <!-- NAVIGATION -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-2">
+                    <!-- Replace with your GFS Icon SVG -->
+                    <div class="w-8 h-8 bg-navy rounded-lg flex items-center justify-center text-white font-bold">G</div>
+                    <span class="font-heading font-bold text-xl tracking-tight">Gifted Flexible Solutions</span>
+                </div>
+                <div class="hidden md:flex space-x-8 text-sm font-semibold">
+                    <a href="#about" class="hover:text-teal transition">About</a>
+                    <a href="#skills" class="hover:text-teal transition">Skills</a>
+                    <a href="#projects" class="hover:text-teal transition">Projects</a>
+                    <a href="#referrals" class="hover:text-teal transition">Referrals</a>
+                    <a href="#contact" class="bg-teal text-white px-4 py-2 rounded-full hover:bg-navy transition">Hire us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="pt-32 pb-20 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-5xl md:text-7xl font-heading font-extrabold mb-6">
+                Hi, we are <span class="gradient-text">Gifted Flexible Solutions</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                Software Engineer specializing in <strong>.NET, React, and Cloud-Native Architectures</strong>. 
+                I build secure, scalable digital platforms for workforce intelligence and enterprise registration.
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#projects" class="bg-navy text-white px-8 py-3 rounded-full font-semibold hover:bg-teal transition shadow-lg">View My Work</a>
+                <a href="#contact" class="border-2 border-navy text-navy px-8 py-3 rounded-full font-semibold hover:bg-navy hover:text-white transition">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-heading font-bold mb-6">Why Work With Me?</h2>
+            <p class="text-lg text-gray-600 leading-relaxed">
+                As a core engineer at <strong>Gifted Flexible Solutions</strong>, I combine deep technical expertise with practical delivery. 
+                I don't just write code; I architect systems that solve real operational problems. Whether it's a complex workforce 
+                registration platform, a real-time analytics dashboard, or a high-performance web application, I deliver 
+                clean, tested, and secure solutions.
+            </p>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-heading font-bold text-center mb-12">Technical Expertise</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <h3 class="font-bold text-teal mb-4 text-lg">Backend</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>.NET 8 / ASP.NET Core</li>
+                        <li>C# / Entity Framework Core</li>
+                        <li>RESTful APIs & Microservices</li>
+                        <li>Clean Architecture & CQRS</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <h3 class="font-bold text-teal mb-4 text-lg">Frontend</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>React 18 / TypeScript</li>
+                        <li>Tailwind CSS / Vite</li>
+                        <li>State Management (Zustand)</li>
+                        <li>Responsive & Accessible UI</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <h3 class="font-bold text-teal mb-4 text-lg">Database & DevOps</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>SQL Server / PostgreSQL</li>
+                        <li>Docker & CI/CD Pipelines</li>
+                        <li>Azure Cloud Services</li>
+                        <li>Git & GitHub Actions</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                    <h3 class="font-bold text-teal mb-4 text-lg">Security</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li>OAuth2 / OIDC / JWT</li>
+                        <li>Role-Based Access Control</li>
+                        <li>Data Encryption & Auditing</li>
+                        <li>OWASP Top 10 Compliance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="py-20 bg-white px-4">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-heading font-bold text-center mb-4">Featured Projects</h2>
+            <p class="text-center text-gray-500 mb-12">A selection of live, deployed web applications.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-light rounded-2xl overflow-hidden shadow-md card-hover transition duration-300">
+                    <!-- REPLACE src WITH YOUR SCREENSHOT -->
+                    <img src="images/YR.png" alt="YR Cleaning Website" class="w-full h-48 object-cover border-b border-gray-200">
+                    <div class="p-6">
+                        <h3 class="font-heading font-bold text-xl mb-2">YR Cleaning Website</h3>
+                        <p class="text-gray-600 text-sm mb-4">A modern, responsive service booking platform with intuitive UI/UX and mobile-first design.</p>
+                        <a href="https://victortende2024.github.io/YR-Cleaning-Website/" target="_blank" class="text-teal font-semibold hover:text-navy transition flex items-center gap-1">
+                            View Live Site <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-light rounded-2xl overflow-hidden shadow-md card-hover transition duration-300">
+                    <!-- REPLACE src WITH YOUR SCREENSHOT -->
+                    <img src="images/movemax.png" alt="MoveMax Website" class="w-full h-48 object-cover border-b border-gray-200">
+                    <div class="p-6">
+                        <h3 class="font-heading font-bold text-xl mb-2">MoveMax Website</h3>
+                        <p class="text-gray-600 text-sm mb-4">A dynamic logistics and moving platform showcasing complex state management and API integration.</p>
+                        <a href="https://vickietende.github.io/MoveMax-Website/" target="_blank" class="text-teal font-semibold hover:text-navy transition flex items-center gap-1">
+                            View Live Site <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-light rounded-2xl overflow-hidden shadow-md card-hover transition duration-300">
+                    <!-- REPLACE src WITH YOUR SCREENSHOT -->
+                    <img src="images/walessgate.png" alt="Walessgate Site" class="w-full h-48 object-cover border-b border-gray-200">
+                    <div class="p-6">
+                        <h3 class="font-heading font-bold text-xl mb-2">Walessgate Site</h3>
+                        <p class="text-gray-600 text-sm mb-4">A professional corporate website focused on performance, accessibility, and clean modern aesthetics.</p>
+                        <a href="https://vickietende.github.io/Walessgate-Site/" target="_blank" class="text-teal font-semibold hover:text-navy transition flex items-center gap-1">
+                            View Live Site <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAILORED JOB SECTION -->
+            <div class="mt-16 bg-navy rounded-2xl p-8 text-center text-white">
+                <h3 class="font-heading font-bold text-2xl mb-4">Looking for a Digital Registration & Workforce Intelligence Platform?</h3>
+                <p class="text-gray-300 max-w-3xl mx-auto mb-6">
+                    I have reviewed the requirements for the Digital Registration & Workforce Intelligence Platform. 
+                    My expertise in .NET, React, and secure enterprise architecture makes me the ideal candidate to deliver this project. 
+                    I am ready to build a scalable, compliant, and intelligent solution.
+                </p>
+                <a href="#contact" class="bg-gold text-navy px-8 py-3 rounded-full font-bold hover:bg-white transition inline-block">Let's Discuss the Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- REFERRALS / TESTIMONIALS -->
+    <section id="referrals" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-heading font-bold text-center mb-12">Referrals & Testimonials</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border-l-4 border-teal">
+                    <p class="text-gray-600 italic mb-6">"Victor's ability to translate complex business requirements into clean, scalable .NET and React code is exceptional. He delivered our platform ahead of schedule."</p>
+                    <div class="font-bold text-navy">— Yashe</div>
+                    <div class="text-sm text-gray-400">CEO, YR-Cleaning (UK)</div>
+                    <div class="text-sm text-gray-400">+44 7310 008772</div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border-l-4 border-gold">
+                    <p class="text-gray-600 italic mb-6">"A highly reliable engineer who understands security and performance. His work on our registration module was flawless."</p>
+                    <div class="font-bold text-navy">— Timothy Ganga</div>
+                    <div class="text-sm text-gray-400">Director</div>
+                    <div class="text-sm text-gray-400">+263772 336 872</div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border-l-4 border-navy">
+                    <p class="text-gray-600 italic mb-6">"Gifted Flexible Solutions, led by Victor, provided us with a world-class digital solution. Highly recommended for any workforce or data-driven project."</p>
+                    <div class="font-bold text-navy">— Mr Mapfumo</div>
+                    <div class="text-sm text-gray-400">Director, Partner Agency</div>
+                    <div class="text-sm text-gray-400">+263772 695 448</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20 bg-white px-4">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl font-heading font-bold mb-6">Ready to Build Something Great?</h2>
+            <p class="text-gray-600 mb-8">I am available for immediate start on the Digital Registration & Workforce Intelligence Platform.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="mailto:victortende@example.com" class="bg-navy text-white px-8 py-4 rounded-full font-bold hover:bg-teal transition">Email Me</a>
+                <a href="https://github.com/victortende2024" target="_blank" class="border-2 border-navy text-navy px-8 py-4 rounded-full font-bold hover:bg-navy hover:text-white transition">GitHub Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-navy text-white py-8 text-center text-sm">
+        <p>&copy; 2026 Gifted Flexible Solutions. All rights reserved.</p>
+        <p class="mt-2 text-gray-400">Flexible Technology. Gifted Results.</p>
+    </footer>
+
+</body>
+</html>
